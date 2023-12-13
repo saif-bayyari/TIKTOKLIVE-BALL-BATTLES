@@ -1,11 +1,12 @@
 import arcade
 import random 
 from explosion import Explosion
+import os 
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 UPDATES_PER_FRAME = 2
-explosion = arcade.Sound("explosion.mp3")
+explosion = arcade.Sound(os.path.abspath("explosion.mp3"))
 
 
 class Particle(arcade.SpriteCircle):
